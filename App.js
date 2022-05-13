@@ -3,6 +3,7 @@ import {
   SafeAreaView,
   StatusBar,
   StyleSheet,
+  View,
 } from 'react-native';
 
 import RootNavigator from './src/routes/RootNavigator';
@@ -13,10 +14,12 @@ const App = () => {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={'light-content'} />
-      <RootNavigator />
-    </SafeAreaView>
+    <>
+      <SafeAreaView style={{ flex: 0, backgroundColor: '#bbb' }} />
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#bbb' }}>
+        <RootNavigator />
+      </SafeAreaView>
+    </>
   );
 };
 

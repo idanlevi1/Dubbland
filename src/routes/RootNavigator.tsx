@@ -20,7 +20,8 @@ export type stackScreenOptionsProp = {
 }
 
 const stackScreenOptions = () => ({
-    headerMode: 'none',
+    headerShown: false,
+    // headerMode: 'none',
     // presentation: 'containedTransparentModal',
     // headerShadowVisible: true,
     // header: () => (<Header title={title?.toString()} {...props} />),
